@@ -15,7 +15,7 @@ resource "google_container_cluster" "this" {
   deletion_protection = false
 
   # Set initial node count (required, but will remove default pool)
-  initial_node_count       = 1
+  initial_node_count       = 3
   # Remove default node pool to use custom node pools instead
   remove_default_node_pool = true
 
